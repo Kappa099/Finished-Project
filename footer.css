@@ -1,0 +1,580 @@
+.mainfoot{
+    width: 100%;
+    height: auto !important;
+    /* height: 80vh; */
+    background-color: #C7E3E3;
+    display: flex;
+    flex-direction: column;
+
+}
+.footcont1{
+    /* height: 60vh; */
+    /* width: 80%; */
+    display: flex;
+}
+.contact{
+    width: 50%;
+    /* height: 60vh; */
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    margin-left: 100px;
+
+}
+.contact h2{
+    font-family: 'lato';
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 100px
+}
+.contact p{
+    font-family: 'lato';
+    font-size: 20px;
+    width: 350px;
+    line-height: 30px;
+}
+.submit{
+    width: 34%;
+    padding-top: 50px;
+}
+.form-container {
+    width: 100%;
+    background-color: #C7E3E3;
+    padding: 20px;
+    border-radius: 10px;
+    /* height: 40vh; */
+    margin-top: 50px;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+    font-family: 'lato';
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+    background: none;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+  }
+  
+  textarea {
+    resize: none;
+    height: 50px;
+  }
+  .button-container {
+    text-align: center;
+  }
+  
+  .button-container button{
+    display: inline-block;
+    background-color: #ff7f50;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 45px;
+    border: 1px solid red;
+    text-align: center;
+  }
+  
+  .button-container a:hover {
+    background-color: #1E2036;
+    color: white;
+    border: none;
+  }
+  .instruction {
+    display: none;
+    color: red;
+    font-size: 14px;
+  }
+  
+  input:focus + .instruction,
+  textarea:focus + .instruction {
+    display: block;
+  }
+  .footline{
+    width: 95%;
+    height: 0.3px;
+    background-color: #000000;
+    color: #000000;
+    margin-top: 125px;
+    margin-left: 50px;
+    position: relative;
+}
+.footcont2{
+    width: 100%;
+    /* height: 40vh; */
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C7E3E3;
+    padding-bottom: 50px;
+}
+.secondlogo{
+    gap: 5px;
+    width: 100px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.secondlogo h2{
+    color: black;
+    font-family: 'lato';
+    font-weight: 600;
+    font-size: 16px;
+}
+.location{
+    width: 25%;
+    font-family: 'lato';
+    line-height: 30px;
+    font-size: 18px;
+}
+.directions{
+    display: flex;
+    width: 25%;
+}
+.drct{
+    width: 180px;
+    height: 60px;
+    background-color: #FF8762;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 2px solid #ff6233;
+    font-family: 'lato';
+    font-weight: 400;
+}
+.drct:hover{
+    background-color:#1E2036;
+    color: white;
+    border: #1E2036;
+}
+.grtmrk{
+    font-size: 25px;
+    color:#FF8762;
+    width: 70px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#1E2036;
+}
+.grtmrk:hover{
+    cursor: pointer;
+}
+.credit{
+    width: 25%;
+    height: 20px;
+}
+.credit p{
+    width: 190px;
+}
+@keyframes move {
+    from {
+        opacity: 0;
+        margin-left: -200px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+@keyframes move2 {
+    from {
+        opacity: 0;
+        margin-right: -200px;
+    }
+    to{
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+@keyframes moveup {
+    from {
+        opacity: 0;
+        margin-top: 100px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:1600){
+    .mainfoot{
+        width: 1200px;
+    }
+    form{
+        width: 300px;
+    }
+    .form-container{
+        width: 250px;
+    }
+}   
+@media screen and (max-width:1325px) {
+    nav{
+        display: flex;
+        justify-content: start;
+    }
+    .cont{
+        width: 80%;
+    }
+    .logo{
+        width: 30%;
+    }
+    header{
+        background-position: center;
+    }
+}
+@media screen and (max-width:1160px) {
+    .button-container a{
+        width: 300px;
+    }
+    .footline{
+        display: none;
+    }
+    .promo{
+        height: 202vh;
+    }
+    .flexcont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+        justify-content: start;
+
+    }
+    .labtext{
+        width: 500px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .labtext{
+        bottom: 0px;
+    }
+    .labcont{
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .navresp{
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        position: relative;
+        color: #555F6F
+    }
+    .midcont{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .logo{
+        width: 99%;
+        justify-content: end;
+    }
+    .navitems{
+        display: none;
+    }
+    .cont{
+        width: 100%;
+        height: 200px;
+        background-color: #1E2036;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin: 0;
+    }
+    .midcont{
+        height: 120px;
+    }
+    .burger{
+        display: flex;
+        margin-right: 10px;
+        color: #555F6F;
+    }
+    .burger-checkbox:checked{
+        color: black;
+    }
+    .Schedule{
+        width: 100%;
+    }
+    .user{
+        margin-left: 10px;
+    }
+    .entry{
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+    .entry a{
+        font-size: 30px;
+    }
+    .entry .user{
+        font-size: 20px;
+    }
+    .board{
+        width: 550px;
+        margin-left: 0px;
+        height: 350px;
+        margin-top: 0;
+    }
+    .boardtext{
+        justify-content: start;
+    }
+    .boardtext h1{
+        font-size: 50px;
+    }
+    .flexcont{
+        height: auto;
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+        margin-top: 0;
+    }
+    article{
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+        height: 50vh;
+        margin-right: 0;
+    }
+    .about{
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .promo{
+        height: auto;
+    }
+    main{
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+    .list li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;  
+        width: 300px;
+    }
+    .min{
+        display: flex;
+        margin-bottom: -10px;
+    }
+    .price{
+        display: flex;
+        justify-content: center;
+    }
+    .click{
+        display: flex;
+    }
+    .footcont1{
+        flex-direction: column;
+        padding-top: 150px;
+    }
+    .footcont2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .footcont2 p{
+        width: 150px;
+    }
+    .map{
+        width:100%
+    }
+    .submit{
+        width: 100%;
+    }
+    .contact {
+        width: 80%;
+        margin-left: 20px;
+    }
+    .srvc{
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .labtext{
+        width: 400px;
+        /* height: 30vh; */
+    }    
+    .labtext p {
+        font-size: 13px;
+        width: 200px;
+    }
+    .flexcont{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width:580px) {
+    .footcont1 {
+        padding-top: 0;
+      }
+    .footcont2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+      }
+    .footcont2 p{
+        width: 300px;
+    }
+    .footcont2 .secondlogo,
+    .footcont2 .location,
+    .footcont2 .directions,
+    .footcont2 .credit {
+      margin-left: 10px;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    .labimg{
+        height: 100vh;
+    }
+    .labtext{
+        width: 300px;
+        left: auto;
+        position: absolute;
+    }    
+    .labtext p {
+        font-size: 13px;
+        width: 200px;
+    }
+    .board{
+        width: 300px;
+        height: 300px;
+    }
+    .boardtext h1{
+        font-size: 27px;
+    }
+    .boardtext p{
+        font-size: 13px;
+    }
+    .schdl{
+        font-size: 15px;
+    }
+    .xazi{
+        /* width: 100%;
+        height: 0.1px; */
+        display: none;
+    }
+    .xazi2{
+        display: flex;
+        width: 60%;
+    }
+    .srvc{
+        font-size: 45px;
+        margin-bottom: 50px;
+        text-align: start;
+    }
+    .info a{
+        font-size: 33px;
+    }
+    .info p{
+        font-size: 18px;
+    }
+    .btn button{
+        width: 400px;
+        height: 60px;
+    }
+
+    .list{
+        width: 100%;
+        gap: 40px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .list li{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 300px;
+    }
+    .price{
+        justify-content: start;
+    }
+    .services{
+        width: 100%;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .submit{
+        width: 100%;
+        height: auto;
+    }
+    .location{
+        width: 300px;
+    }
+    .secondlogo {
+        width: 100px;
+    }  
+
+}
+
+@media screen  and (max-width:470px){
+    .contact p{
+        width: 220px;
+    }
+}
